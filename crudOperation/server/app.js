@@ -4,7 +4,7 @@ const schema = require('./schema/schema')
 const schemaType = require('./schema/schema-type');
 const mongoose = require('mongoose');
 const cors = require('cors');
-const uri = "mongodb+srv://India:India@1234@cluster0.2ya8u.mongodb.net/<dbname>?retryWrites=true&w=majority";
+const uri = "mongodb+srv://India:India@12@cluster0.2ya8u.mongodb.net/<dbname>?retryWrites=true&w=majority";
 mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true  })
 .then(() => {
     console.log('Server Connected to database');
