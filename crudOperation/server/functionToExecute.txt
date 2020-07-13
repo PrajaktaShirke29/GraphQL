@@ -1,0 +1,61 @@
+# mutation{
+#   updateUser(id:"5f0c1ca9e0b69332746e2640", name:"Prajakta", age: 22, profession: "Act"){
+#     name
+#     age
+#     profession
+#   }
+# }
+
+# {
+#   users{
+#     name
+#     id
+#     age
+#     profession
+#   }
+# }
+
+# mutation{
+#   deleteUser(id:"5f0c22a324964033f4368e40"){
+#     id
+#   }
+# }
+
+# {
+#   posts{
+#     id
+#     comment
+#     user{
+#       id
+#     }
+#   }
+# }
+
+# mutation{
+#   updatePost(id:"5f0c226e24964033f4368e3f",
+# 					comment:"Never Ending", 
+#           userId:"5f0c1ca9e0b69332746e2640"){
+#     id
+#     comment
+#   }
+# }
+
+# {
+#   hobbies{
+#     id
+#     description
+#     users{
+#       id
+#     }
+#   }
+# }
+
+# mutation{
+#   updateHobby(id: "5f0c226e24964033f4368e3e",
+#   name: "Dancer",
+#   description: "In Love with dance",
+#   userId: "5f0c1ca9e0b69332746e2640"){
+#     name
+#     description
+#   }
+# }
